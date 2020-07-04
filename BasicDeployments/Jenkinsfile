@@ -21,12 +21,7 @@ node {
      stage('Deploy') { 
             sh '''
             echo "deployment Phase" 
-            sh BasicDeployments/deployment_script.sh
+            sh DeploymentCode/BasicDeployments/deployment_script.sh
             '''
      }
-    post { 
-        always { 
-            cleanWs()
-        }
-    }
 }
