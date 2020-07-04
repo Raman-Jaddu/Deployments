@@ -6,29 +6,23 @@ node {
         git url: 'https://github.com/Raman-Jaddu/Deployments.git'
     }
     
-        stage('Build') {
-            steps {
-                sh '''
-                pwd
-                ls
-                cat README.md
-                echo "Build Phase"
-                '''
-            }
-        }
-        stage('Test') { 
-            steps {
-                sh '''
-                echo "Test Phase" 
-                '''
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                sh '''
-                echo "deployment Phase" 
-                sh BasicDeployments/deployment_script.sh
-                '''
-            }
-        }
+    stage('Build') {
+            sh '''
+            pwd
+            ls
+            cat README.md
+            echo "Build Phase"
+            '''
+     }
+     stage('Test') { 
+            sh '''
+            echo "Test Phase" 
+            '''
+     }
+     stage('Deploy') { 
+            sh '''
+            echo "deployment Phase" 
+            sh BasicDeployments/deployment_script.sh
+            '''
+     }
 }
