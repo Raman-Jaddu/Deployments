@@ -8,6 +8,7 @@ node {
             ls -R
             cat README.md
             echo "Build Phase"
+            echo "raman"
             '''
      }
      stage('Test') { 
