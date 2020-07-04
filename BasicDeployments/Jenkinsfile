@@ -1,6 +1,6 @@
 node {
     dir('MainCode') {
-        git url: 'https://github.com/Raman-Jaddu/Hello-World.git'    
+        git url: '${GIT_REPO}'    
     }
     dir('DeploymentCode') {
         git url: 'https://github.com/Raman-Jaddu/Deployments.git'    
