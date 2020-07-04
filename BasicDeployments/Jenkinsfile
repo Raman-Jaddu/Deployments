@@ -3,8 +3,10 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'ls'
-                sh 'sh -x BasicDeployments/deployment_script.sh'
+                sh '''
+                ls 
+                sh -x BasicDeployments/deployment_script.sh
+                '''
             }
         }
         stage('Test') { 
