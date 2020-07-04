@@ -22,10 +22,9 @@ node {
             sh BasicDeployments/deployment_script.sh
             '''
      }
-    stage('Cleaning Workspace') { 
-            sh '''
-            pwd
-            rm -rf *
-            '''
-     }
+    post { 
+        always { 
+            cleanWs()
+        }
+    }
 }
