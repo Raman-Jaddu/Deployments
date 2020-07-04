@@ -6,6 +6,7 @@ pipeline {
                 sh '''
                 pwd
                 ls
+                cat README.md
                 echo "Build Phase"
                 '''
             }
