@@ -9,7 +9,7 @@ node {
     stage('Build') {
             sh '''
             pwd
-            ls
+            ls -R
             cat README.md
             echo "Build Phase"
             '''
