@@ -2,10 +2,6 @@ node {
     dir('MainCode') {
         git url: 'https://github.com/Raman-Jaddu/Hello-World.git'    
     }
-    dir('Deployments') {
-        git url: 'https://github.com/Raman-Jaddu/Deployments.git'
-    }
-    
     stage('Build') {
             sh '''
             pwd
