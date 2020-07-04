@@ -4,19 +4,23 @@ pipeline {
         stage('Build') { 
             steps {
                 sh '''
-                ls 
-                sh -x BasicDeployments/deployment_script.sh
+                echo "Build Phase"
                 '''
             }
         }
         stage('Test') { 
             steps {
-                sh 'echo "test"'
+                sh '''
+                echo "Test Phase" 
+                '''
             }
         }
         stage('Deploy') { 
             steps {
-                sh 'echo "Deploy"'
+                sh '''
+                echo "deployment Phase" 
+                sh -x BasicDeployments/deployment_script.sh
+                '''
             }
         }
     }
