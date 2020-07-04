@@ -6,7 +6,6 @@ node {
             sh '''
             pwd
             ls -R
-            cat README.md
             echo "Build Phase"
             echo "raman"
             '''
