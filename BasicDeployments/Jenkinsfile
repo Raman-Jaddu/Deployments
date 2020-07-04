@@ -7,10 +7,7 @@ node {
     }
     stage('Build') {
             sh '''
-            pwd
-            ls -R
             echo "Build Phase"
-            echo "raman"
             '''
      }
      stage('Test') { 
