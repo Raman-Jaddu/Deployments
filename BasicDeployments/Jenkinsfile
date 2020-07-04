@@ -5,7 +5,7 @@ node {
     dir('Deployments') {
         git url: 'https://github.com/Raman-Jaddu/Deployments.git'
     }
-    stages {
+    
         stage('Build') {
             steps {
                 sh '''
@@ -31,5 +31,4 @@ node {
                 '''
             }
         }
-    }
 }
