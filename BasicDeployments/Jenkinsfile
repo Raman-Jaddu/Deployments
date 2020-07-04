@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh '''
                 echo "deployment Phase" 
-                sh -x BasicDeployments/deployment_script.sh
+                sh BasicDeployments/deployment_script.sh
                 '''
             }
         }
