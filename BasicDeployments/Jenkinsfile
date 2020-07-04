@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls'
-                sh 'sh -x deployment_script.sh'
+                sh 'sh -x BasicDeployments/deployment_script.sh'
             }
         }
         stage('Test') { 
